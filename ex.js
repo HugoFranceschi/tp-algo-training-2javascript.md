@@ -50,14 +50,10 @@ printMultiples(10); // Output attendu : 3, 6, 9
 
 //ex7
 function isPalindrome(text) {
-	let tab = [];
-	for (let i = 0; i < text.length; i++) {
-		tab[i] = text[i];
-		if (tab[i] == text[i]) {
-			return true;
-		} else {
-			return false;
-		}
+	if (text.split("").reverse().join("") == text) {
+		return true;
+	} else {
+		return false;
 	}
 }
 console.log(isPalindrome("radar")); // Output attendu : true
